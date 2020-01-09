@@ -9,7 +9,7 @@ pipeline {
                 sh 'npm install'
                 stash includes: 'node_modules/', name: 'node_modules'
             }
-        },
+        }
         stage('Build') {
             steps {
                 echo 'Building..'
