@@ -9,7 +9,7 @@ pipeline {
                 echo 'Fetch dependencies..'
                 sh 'npm --version'
                 sh 'node --version'
-                sh 'ipconfig'
+                sh 'ifconfig'
                 sh 'wget http://www.google.com'
                 sh 'ping http://www.google.com'
                 sh 'npm ping http://www.google.com'
