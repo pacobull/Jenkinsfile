@@ -10,8 +10,8 @@ pipeline {
                 sh 'npm --version'
                 sh 'node --version'
                 sh 'npm ping http://www.google.com'
-                sh 'npm ping https://www.google.com'
-                sh 'npm ping https://registry.npmjs.org'
+                // sh 'npm ping https://www.google.com'
+                // sh 'npm ping https://registry.npmjs.org'
                 // sh 'npm install'
                 // stash includes: 'node_modules/', name: 'node_modules'
             }
