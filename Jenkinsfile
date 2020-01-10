@@ -9,6 +9,7 @@ pipeline {
                 echo 'Fetch dependencies..'
                 sh 'npm --version'
                 sh 'node --version'
+                sh 'ping http://www.google.com'
                 sh 'npm ping http://www.google.com'
                 // sh 'npm ping https://www.google.com'
                 // sh 'npm ping https://registry.npmjs.org'
