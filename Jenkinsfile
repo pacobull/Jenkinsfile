@@ -4,12 +4,34 @@ pipeline {
   tools {nodejs "node"}
  
   stages {
-    stage('Node test') {
+    stage('Install dependencies') {
       steps {
-        sh 'node --version'
-        sh 'npm --version'
         sh 'npm install'
       }
     }
+    
+    stage('Lint') {
+      steps {
+         sh 'npm lint'
+      }
+    }  
+
+    stage('Audit') {
+      steps {
+         sh 'npm audit'
+      }
+    }  
+    
+    stage('Test') {
+      steps {
+         sh 'npm test'
+      }
+    }  
+    
+    stage('Build') {
+      steps {
+         sh 'npm buil --prod'
+      }
+    }  
   }
 }
