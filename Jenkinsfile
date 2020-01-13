@@ -33,7 +33,8 @@ pipeline {
 
     stage('E2E Tests') {
       steps {
-         sh 'npm run e2e'
+        echo 'E2E Tests OFF'
+        // sh 'npm run e2e'
       }
     }  
     
