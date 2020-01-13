@@ -26,8 +26,8 @@ pipeline {
     
     stage('Unit Tests') {
       steps {
-         echo 'Unit Tests OFF'
-         // sh 'npm run test'
+         // echo 'Unit Tests OFF'
+         sh 'npm run test'
       }
     }  
 
@@ -40,7 +40,7 @@ pipeline {
     
     stage('Build') {
       steps {
-         sh 'ng build --prod'
+         sh 'npm run buildProd'
       }
     }  
   }
