@@ -27,8 +27,6 @@ pipeline {
     stage('Unit Tests') {
       steps {
          // echo 'Unit Tests OFF'
-         sh 'export CHROME_BIN=/usr/bin/chromium-browser'
-         sh 'ls -la /usr/bin/chromium-browser'
          sh 'npm run test'
       }
     }  
