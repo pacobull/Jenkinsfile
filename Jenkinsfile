@@ -17,21 +17,21 @@ pipeline {
       }
     }  
 
-    /*
     stage('Audit') {
       steps {
-         sh 'npm audit'
+         echo 'Audit OFF'
+         // sh 'npm audit'
       }
     }
-    */
     
-    stage('Unit Test') {
+    stage('Unit Tests') {
       steps {
-         sh 'npm test'
+         echo 'Unit Tests OFF'
+         // sh 'npm test'
       }
     }  
 
-    stage('E2E Test') {
+    stage('E2E Tests') {
       steps {
          sh 'npm e2e'
       }
