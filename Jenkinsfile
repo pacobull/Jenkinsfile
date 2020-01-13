@@ -17,11 +17,13 @@ pipeline {
       }
     }  
 
+    /*
     stage('Audit') {
       steps {
          sh 'npm audit'
       }
-    }  
+    }
+    */
     
     stage('Unit Test') {
       steps {
