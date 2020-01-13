@@ -13,7 +13,7 @@ pipeline {
     stage('Lint') {
       steps {
          sh 'ng --version'
-         sh 'ng lint'
+         sh 'npm run lint'
       }
     }  
 
@@ -27,19 +27,19 @@ pipeline {
     stage('Unit Tests') {
       steps {
          echo 'Unit Tests OFF'
-         // sh 'npm test'
+         // sh 'npm run test'
       }
     }  
 
     stage('E2E Tests') {
       steps {
-         sh 'npm e2e'
+         sh 'npm run e2e'
       }
     }  
     
     stage('Build') {
       steps {
-         sh 'npm buil --prod'
+         sh 'ng build --prod'
       }
     }  
   }
