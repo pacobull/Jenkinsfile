@@ -26,15 +26,15 @@ pipeline {
     
     stage('Unit Tests') {
       steps {
-         echo 'Unit Tests OFF'
-         //sh 'npm run test'
+         // echo 'Unit Tests OFF'
+         sh 'npm run test'
       }
     }  
 
     stage('E2E Tests') {
       steps {
-        // echo 'E2E Tests OFF'
-        sh 'npm run e2e'
+        echo 'E2E Tests OFF'
+        // sh 'npm run e2e'
       }
     }  
     
