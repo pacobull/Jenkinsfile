@@ -12,7 +12,8 @@ pipeline {
     
     stage('Lint') {
       steps {
-         sh 'npm lint'
+         sh 'ng --version'
+         sh 'ng lint'
       }
     }  
 
